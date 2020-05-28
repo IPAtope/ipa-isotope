@@ -9,17 +9,16 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: setup
       - uses: actions/checkout@v2
         with:
           submodules: true
-
-      - name: Setup
-      
+          
       - run: python3 -m pip install -U -r requirements.txt
       - run: ./extract_phoneme_list.py
       - run: ./ipatope.py
 
-      - name: Deploy
+      - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./public
