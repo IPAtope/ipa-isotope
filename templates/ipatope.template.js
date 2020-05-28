@@ -6,7 +6,7 @@ var $grid = $('.grid').isotope({
 
   layoutMode: 'packery',
   packery: {
-    gutter: 2
+    gutter: 8
   },
   stamp: '.stamp',
 
@@ -94,11 +94,11 @@ $('.sorters').on('click', '.button', function() {
     {% for filter in filters %}
         {% for target in filter.fn.split(',') %}
             $('.button[data-filter~="{{ filter.fn }}"]').hover(function(e) {
-                $('.phoneme-item[class~="{{ target[1:] }}"]').css('outline', '2.5px dashed #444');
-                $(this).css('outline', '1px dashed #444');
+                $('.phoneme-item[class~="{{ target[1:] }}"]').css('background', '#d1b2dc');
+                $('.phoneme-item[class~="{{ target[1:] }}"]').css('outline', '3px dashed #723c86');
             }, function(e) {
+                $('.phoneme-item[class~="{{ target[1:] }}"]').css('background', '');
                 $('.phoneme-item[class~="{{ target[1:] }}"]').css('outline', '');
-                $(this).css('outline', '');
             });
         {% endfor %}
     {% endfor %}

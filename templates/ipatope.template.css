@@ -3,7 +3,21 @@
 body {
   font-family: sans-serif;
   margin: 1%;
+  background-color: #ece6d5;
 }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ece6d5;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* hidden elements */
 
 .hidden {
     display: none;
@@ -14,26 +28,24 @@ body {
 .controls > .button, .button-group > .button {
   float: left;
   border-radius: 0;
-  margin-left: 1;
-  background-color: #E0FFFF;
+  margin: .5;
+  background-color: #ecdbd5;
   border: 1px solid black;
   color: black;
   cursor: pointer;
 }
 
-/* .button-group > .button:hover, .card:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
-} */
+.button-group > .button:hover {
+  background-color: #b684c7;
+}
 
 .button-group > .button:active {
-  background-color: #28F;
+  background-color: #673678;
 }
 
 .button-group > .button.is-checked {
   color: white;
-  background-color: #00008B;
+  background-color: #442450;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
@@ -55,8 +67,8 @@ body {
 }
 
 .button-group-label {
-    background-color: #D3D3D3;
-    margin: 2;
+    background-color: #eec5fc;
+    margin: 1;
     margin-right: 10;
     font-weight: bold;
     border-radius: 0.2em 0.2em 0.2em 0.2em;
@@ -93,6 +105,7 @@ body {
 
 .card:hover {
   box-shadow: 0 20px 30px rgba(0,0,0,0.25), 0 13px 13px rgba(0,0,0,0.22);
+  background-color: #d1b2dc;
 }
 
 .phoneme-item {
@@ -168,12 +181,22 @@ body {
 }
 
 /* coloring all at first such that unknowns get color too */
+/* .phoneme-item                                   { background: #F08; background: hsl( 324, 80%, 80%); }
+.phoneme-item.plosive,.stop                     { background: #F00; background: hsl(   0, 80%, 80%); }
+.phoneme-item.fricative,.affricate,.sibilant    { background: #F80; background: hsl(  36, 80%, 80%); }
+.phoneme-item.nasal                             { background: #F80; background: hsl(  52, 80%, 80%); }
+.phoneme-item.trill                             { background: #0F0; background: hsl( 108, 80%, 80%); }
+.phoneme-item.tap,.flap                         { background: #0F8; background: hsl( 144, 80%, 80%); }
+.phoneme-item.approximant:not(.fricative)       { background: #0FF; background: hsl( 180, 80%, 80%); }
+.phoneme-item.vowel                             { background: #08F; background: hsl( 216, 80%, 80%); }
+.phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); } */
+
 .phoneme-item                                   { background: #F08; background: hsl( 324, 80%, 80%); }
 .phoneme-item.plosive,.stop                     { background: #F00; background: hsl(   0, 80%, 80%); }
 .phoneme-item.fricative,.affricate,.sibilant    { background: #F80; background: hsl(  36, 80%, 80%); }
 .phoneme-item.nasal                             { background: #F80; background: hsl(  52, 80%, 80%); }
 .phoneme-item.trill                             { background: #0F0; background: hsl( 108, 80%, 80%); }
-.phoneme-item.tap, .flap                        { background: #0F8; background: hsl( 144, 80%, 80%); }
+.phoneme-item.tap,.flap                         { background: #0F8; background: hsl( 144, 80%, 80%); }
 .phoneme-item.approximant:not(.fricative)       { background: #0FF; background: hsl( 180, 80%, 80%); }
 .phoneme-item.vowel                             { background: #08F; background: hsl( 216, 80%, 80%); }
 .phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); }
