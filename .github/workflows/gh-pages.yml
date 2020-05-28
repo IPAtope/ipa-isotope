@@ -1,9 +1,6 @@
 name: github pages
 
-on:
-  push:
-    branches:
-      - master  # default branch
+on: [push]
 
 jobs:
   deploy:
@@ -18,6 +15,7 @@ jobs:
           python-version: 3.7
               
       - run: |
+          mkdir -p public
           python3 -m pip install -U -r requirements.txt
           ./extract_phoneme_list.py
           ./ipatope.py
@@ -25,6 +23,7 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_dir: ./public
+          publish_dir: .public
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allow_empty_commit: true
+          publish_branch: master
