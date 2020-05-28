@@ -105,7 +105,7 @@ body {
 
 .card:hover {
   box-shadow: 0 20px 30px rgba(0,0,0,0.25), 0 13px 13px rgba(0,0,0,0.22);
-  background-color: #d1b2dc;
+  /* background-color: #d1b2dc; */
 }
 
 .phoneme-item {
@@ -118,6 +118,9 @@ body {
   background: #888;
   color: #262524;
   font-family: 'Ubuntu', sans-serif;
+}
+.phoneme-item:hover {
+  /* background-color: #d1b2dc; */
 }
 
 .phoneme-item > * {
@@ -167,13 +170,6 @@ body {
   color: white;
 }
 
-.phoneme-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px;
-}
-
 .phoneme-item .sonority {
   position: absolute;
   right: 8px;
@@ -181,22 +177,22 @@ body {
 }
 
 /* coloring all at first such that unknowns get color too */
-/* .phoneme-item                                   { background: #F08; background: hsl( 324, 80%, 80%); }
-.phoneme-item.plosive,.stop                     { background: #F00; background: hsl(   0, 80%, 80%); }
-.phoneme-item.fricative,.affricate,.sibilant    { background: #F80; background: hsl(  36, 80%, 80%); }
-.phoneme-item.nasal                             { background: #F80; background: hsl(  52, 80%, 80%); }
-.phoneme-item.trill                             { background: #0F0; background: hsl( 108, 80%, 80%); }
-.phoneme-item.tap,.flap                         { background: #0F8; background: hsl( 144, 80%, 80%); }
-.phoneme-item.approximant:not(.fricative)       { background: #0FF; background: hsl( 180, 80%, 80%); }
-.phoneme-item.vowel                             { background: #08F; background: hsl( 216, 80%, 80%); }
-.phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); } */
-
 .phoneme-item                                   { background: #F08; background: hsl( 324, 80%, 80%); }
 .phoneme-item.plosive,.stop                     { background: #F00; background: hsl(   0, 80%, 80%); }
 .phoneme-item.fricative,.affricate,.sibilant    { background: #F80; background: hsl(  36, 80%, 80%); }
-.phoneme-item.nasal                             { background: #F80; background: hsl(  52, 80%, 80%); }
+.phoneme-item.nasal                             { background: #F80; background: #C5AEB4; }
 .phoneme-item.trill                             { background: #0F0; background: hsl( 108, 80%, 80%); }
-.phoneme-item.tap,.flap                         { background: #0F8; background: hsl( 144, 80%, 80%); }
+.phoneme-item.tap,.flap                         { background: #0F8; background: #7B8FA5; }
 .phoneme-item.approximant:not(.fricative)       { background: #0FF; background: hsl( 180, 80%, 80%); }
 .phoneme-item.vowel                             { background: #08F; background: hsl( 216, 80%, 80%); }
-.phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); }
+/* .phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); } */
+
+/* .phoneme-item                                   { background: #B29DB6; }
+.phoneme-item.plosive,.stop                     { background: #ffc590; }
+.phoneme-item.fricative,.affricate,.sibilant    { background: #afafaf; }
+.phoneme-item.nasal                             { background: #ABC3CE; }
+.phoneme-item.trill                             { background: #C5AEB4; }
+.phoneme-item.tap,.flap                         { background: #7B8FA5; }
+.phoneme-item.approximant:not(.fricative)       { background: #99B49F; }
+.phoneme-item.vowel                             { background: hsl( 216, 80%, 80%); }
+.phoneme-item.approximant.fricative             { background: ##748fe0; } */
