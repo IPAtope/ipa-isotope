@@ -5,6 +5,9 @@ body {
   margin: 1%;
 }
 
+.hidden {
+    display: none;
+}
 
 /* ---- button ---- */
 
@@ -18,11 +21,11 @@ body {
   cursor: pointer;
 }
 
-.button-group > .button:hover {
+/* .button-group > .button:hover, .card:hover {
   background-color: #8CF;
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
   color: #222;
-}
+} */
 
 .button-group > .button:active {
   background-color: #28F;
@@ -101,6 +104,8 @@ body {
   padding: 10px;
   background: #888;
   color: #262524;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
 }
 
 .phoneme-item > * {
@@ -114,7 +119,7 @@ body {
 .phoneme-item.is-dragging,
 /* Packery adds class while transitioning to drop position */
 .phoneme-item.is-positioning-post-drag {
-  z-index: 2; /* keep dragged item on top */
+  z-index: 100; /* keep dragged item on top */
   outline: 3px dashed #444;
   box-shadow: 0 40px 60px rgba(0,0,0,0.45), 0 20px 20px rgba(0,0,0,0.22);
 }
@@ -127,57 +132,27 @@ body {
 }
 
 
-
 .phoneme-item .name {
   position: absolute;
 
-  left: 10px;
-  top: 60px;
+  left: 5%;
+  top: 50%;
+  margin-right: 10px;
   text-transform: none;
   letter-spacing: 0;
   font-size: 12px;
-  font-weight: normal;
-}
-
-.phoneme-item .voice {
-  position: absolute;
-
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.phoneme-item .place {
-  position: absolute;
-
-  left: 10px;
-  top: 75px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.phoneme-item .manner {
-  position: absolute;
-
-  left: 10px;
-  top: 90px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
 }
 
 .phoneme-item .symbol {
   position: absolute;
-  left: 10px;
-  top: 0px;
+  left: 10%;
+  top: .1%;
   font-size: 42px;
   font-weight: bold;
+  font-family: sans-serif;
+
   color: white;
 }
 

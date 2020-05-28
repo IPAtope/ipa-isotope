@@ -1,5 +1,3 @@
-// external js: isotope.pkgd.js
-
 
 // init Isotope
 var $grid = $('.grid').isotope({
@@ -91,6 +89,341 @@ $('.sorters').on('click', '.button', function() {
 });
 
 
+
+
+    
+        
+            $('.button[data-filter~=".voiced,.vowel"]').hover(function(e) {
+                $('.phoneme-item[class~="voiced"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="voiced"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".voiced,.vowel"]').hover(function(e) {
+                $('.phoneme-item[class~="vowel"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="vowel"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".voiceless"]').hover(function(e) {
+                $('.phoneme-item[class~="voiceless"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="voiceless"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+
+    
+        
+            $('.button[data-filter~=".glottal"]').hover(function(e) {
+                $('.phoneme-item[class~="glottal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="glottal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".velar"]').hover(function(e) {
+                $('.phoneme-item[class~="velar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="velar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".uvular"]').hover(function(e) {
+                $('.phoneme-item[class~="uvular"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="uvular"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar"]').hover(function(e) {
+                $('.phoneme-item[class~="alveolar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="alveolar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar"]').hover(function(e) {
+                $('.phoneme-item[class~="postalveolar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="postalveolar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar"]').hover(function(e) {
+                $('.phoneme-item[class~="alveolo-palatal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="alveolo-palatal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar"]').hover(function(e) {
+                $('.phoneme-item[class~="palato-alveolar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="palato-alveolar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="palatal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="palatal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="palato-alveolar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="palato-alveolar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="alveolo-palatar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="alveolo-palatar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="palatalised"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="palatalised"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="labial-palatal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labial-palatal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="labial"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labial"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="bilabial"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="bilabial"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="labiodental"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labiodental"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="labiovelar"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labiovelar"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"]').hover(function(e) {
+                $('.phoneme-item[class~="labial-palatal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labial-palatal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".dental,.labiodental"]').hover(function(e) {
+                $('.phoneme-item[class~="dental"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="dental"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".dental,.labiodental"]').hover(function(e) {
+                $('.phoneme-item[class~="labiodental"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="labiodental"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".nasal"]').hover(function(e) {
+                $('.phoneme-item[class~="nasal"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="nasal"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+
+    
+        
+            $('.button[data-filter~=".stop,.plosive"]').hover(function(e) {
+                $('.phoneme-item[class~="stop"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="stop"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".stop,.plosive"]').hover(function(e) {
+                $('.phoneme-item[class~="plosive"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="plosive"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".trill"]').hover(function(e) {
+                $('.phoneme-item[class~="trill"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="trill"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".tap,.flap"]').hover(function(e) {
+                $('.phoneme-item[class~="tap"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="tap"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+            $('.button[data-filter~=".tap,.flap"]').hover(function(e) {
+                $('.phoneme-item[class~="flap"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="flap"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".lateral"]').hover(function(e) {
+                $('.phoneme-item[class~="lateral"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="lateral"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".fricative"]').hover(function(e) {
+                $('.phoneme-item[class~="fricative"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="fricative"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".affricate"]').hover(function(e) {
+                $('.phoneme-item[class~="affricate"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="affricate"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".sibilant"]').hover(function(e) {
+                $('.phoneme-item[class~="sibilant"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="sibilant"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".approximant"]').hover(function(e) {
+                $('.phoneme-item[class~="approximant"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="approximant"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+        
+            $('.button[data-filter~=".vowel"]').hover(function(e) {
+                $('.phoneme-item[class~="vowel"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="vowel"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+
+    
+        
+            $('.button[data-filter~="sonGreaterThan5"]').hover(function(e) {
+                $('.phoneme-item[class~="onGreaterThan5"]').css('outline', '2.5px dashed #444');
+                $(this).css('outline', '1px dashed #444');
+            }, function(e) {
+                $('.phoneme-item[class~="onGreaterThan5"]').css('outline', '');
+                $(this).css('outline', '');
+            });
+        
+    
+
+
+
+
+// packery --------------------
+
 $('.ui-group').packery({
   itemSelector: '.ui-group-item',
   gutter: 1,
@@ -141,6 +474,7 @@ function concatArr(arr) {
 }
 
 
+$('.tip').delay(5000).fadeOut('slow');
 
 // --------------- URL __hash__
 // function getHashFilter() {

@@ -1,4 +1,4 @@
-voicing:
+voice:
     - text: voiced
       fn:   .voiced,.vowel
     - text: voiceless
@@ -27,6 +27,8 @@ manner:
       fn:   .trill
     - text: tap or flap
       fn:   .tap,.flap
+    - text: lateral
+      fn:   .lateral
     - text: fricative
       fn:   .fricative
     - text: affricate

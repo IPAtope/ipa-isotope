@@ -1,7 +1,25 @@
 - aspiration: ''
-  classes: 'consonant voiceless    stop  alveolar      '
+  classes: 'consonant voiceless    alveolar      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - &id001 !!python/name:builtins.str ''
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless alveolar stop
@@ -11,15 +29,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: t
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant ejective voiceless   stop  alveolar      '
+  classes: 'consonant ejective   alveolar      voiceless stop  '
   consonant: consonant
   ejective: ejective
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ejective
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: ejective voiceless alveolar stop
@@ -29,15 +65,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "t\u02BC"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated voiceless    stop  alveolar     '
+  classes: 'consonant aspirated    alveolar     voiceless stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: aspirated
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: aspirated voiceless alveolar stop
@@ -47,15 +101,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "t\u02B0"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised voiceless    stop  alveolar     '
+  classes: 'consonant palatalised    alveolar     voiceless stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: palatalised voiceless alveolar stop
@@ -65,15 +137,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "t\u02B2"
   tendency: palatalised
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    stop  alveolar      '
+  classes: 'consonant voiced    alveolar      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiced alveolar stop
@@ -83,15 +173,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.37
   symbol: d
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised voiced    stop  alveolar     '
+  classes: 'consonant palatalised    alveolar     voiced stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: stop
   name: palatalised voiced alveolar stop
@@ -101,15 +209,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.37
   symbol: "d\u02B2"
   tendency: palatalised
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    sibilant  alveolar      '
+  classes: 'consonant voiceless    alveolar      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiceless alveolar sibilant
@@ -119,15 +245,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 5.11
   symbol: s
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    sibilant  alveolar      '
+  classes: 'consonant voiced    alveolar      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiced alveolar sibilant
@@ -137,15 +281,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.14
   symbol: z
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless lateral   fricative  alveolar      '
+  classes: 'consonant voiceless    alveolar      fricative lateral '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: lateral
+      manner: fricative
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: lateral
   manner: fricative
   name: voiceless alveolar lateral fricative
@@ -155,15 +317,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 7.01
+  sonority: 6.41
   symbol: "\u026C"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced lateral   fricative  alveolar      '
+  classes: 'consonant voiced    alveolar      fricative lateral '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: lateral
+      manner: fricative
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: lateral
   manner: fricative
   name: voiced alveolar lateral fricative
@@ -173,15 +353,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 7.03
+  sonority: 6.43
   symbol: "\u026E"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  dental      '
+  classes: 'consonant voiceless    dental      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: dental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless dental fricative
@@ -191,15 +389,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: "\u03B8"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  dental      '
+  classes: 'consonant voiced    dental      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: dental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced dental fricative
@@ -209,15 +425,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\xF0"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    sibilant  palato-alveolar      '
+  classes: 'consonant voiceless    palato-alveolar      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: palato-alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiceless palato-alveolar sibilant
@@ -227,15 +461,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 5.11
   symbol: "\u0283"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    sibilant  alveolo-palatal      '
+  classes: 'consonant voiceless    alveolo-palatal      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: alveolo-palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiceless alveolo-palatal sibilant
@@ -245,15 +497,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 5.11
   symbol: "\u0255"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised voiceless    sibilant  palato-alveolar     '
+  classes: 'consonant palatalised    palato-alveolar     voiceless sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: palato-alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: palatalised voiceless palato-alveolar sibilant
@@ -263,15 +533,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 5.11
   symbol: "\u0283\u02B2"
   tendency: palatalised
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    sibilant  palato-alveolar      '
+  classes: 'consonant voiced    palato-alveolar      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: palato-alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiced palato-alveolar sibilant
@@ -281,15 +569,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.14
   symbol: "\u0292"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    sibilant  alveolo-palatal      '
+  classes: 'consonant voiced    alveolo-palatal      sibilant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: sibilant
+      near: ''
+      opening: ''
+      place: alveolo-palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: sibilant
   name: voiced alveolo-palatal sibilant
@@ -299,15 +605,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.14
   symbol: "\u0291"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    stop  palatal      '
+  classes: 'consonant voiceless    palatal      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless palatal stop
@@ -317,15 +641,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: c
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    stop  palatal      '
+  classes: 'consonant voiced    palatal      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiced palatal stop
@@ -335,15 +677,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.37
   symbol: "\u025F"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  palatal      '
+  classes: 'consonant voiceless    palatal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless palatal fricative
@@ -353,15 +713,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: "\xE7"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  palatal      '
+  classes: 'consonant voiced    palatal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced palatal fricative
@@ -371,15 +749,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u029D"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    plosive  bilabial      '
+  classes: 'consonant voiceless    bilabial      plosive  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: plosive
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: plosive
   name: voiceless bilabial plosive
@@ -389,15 +785,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.76
+  sonority: 4.54
   symbol: p
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    plosive  bilabial      '
+  classes: 'consonant voiced    bilabial      plosive  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: plosive
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: plosive
   name: voiced bilabial plosive
@@ -407,15 +821,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.58
   symbol: b
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated voiced    plosive  bilabial     '
+  classes: 'consonant aspirated    bilabial     voiced plosive  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: aspirated
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: plosive
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: plosive
   name: aspirated voiced bilabial plosive
@@ -425,15 +857,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.58
   symbol: "b\u02B0"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  labiodental      '
+  classes: 'consonant voiceless    labiodental      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: labiodental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless labiodental fricative
@@ -443,15 +893,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: f
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  labiodental      '
+  classes: 'consonant voiced    labiodental      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: labiodental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced labiodental fricative
@@ -461,15 +929,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: v
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  bilabial      '
+  classes: 'consonant voiceless    bilabial      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless bilabial fricative
@@ -479,15 +965,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: "\u0278"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  bilabial      '
+  classes: 'consonant voiced    bilabial      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced bilabial fricative
@@ -497,15 +1001,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u03B2"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    stop  velar      '
+  classes: 'consonant voiceless    velar      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless velar stop
@@ -515,15 +1037,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: k
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    stop  velar labialised     '
+  classes: 'consonant voiceless    velar     labialised stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: labialised
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless labialised velar stop
@@ -533,15 +1073,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "k\u02B7"
   tendency: labialised
   voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant voiceless    stop  velar  aspirated    '
+  classes: 'consonant voiceless    velar   aspirated   stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: aspirated
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless aspirated velar stop
@@ -551,15 +1109,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "k\u02B0"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised voiceless    stop  velar     '
+  classes: 'consonant palatalised    velar     voiceless stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: palatalised voiceless velar stop
@@ -569,15 +1145,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "k\u02B2"
   tendency: palatalised
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    stop  velar      '
+  classes: 'consonant voiced    velar      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiced velar stop
@@ -587,15 +1181,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.37
   symbol: g
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  velar      '
+  classes: 'consonant voiceless    velar      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless velar fricative
@@ -605,15 +1217,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: x
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  velar      '
+  classes: 'consonant voiced    velar      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced velar fricative
@@ -623,15 +1253,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u0263"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    stop  uvular      '
+  classes: 'consonant voiceless    uvular      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiceless uvular stop
@@ -641,15 +1289,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: q
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    stop  uvular      '
+  classes: 'consonant voiced    uvular      stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: stop
   name: voiced uvular stop
@@ -659,15 +1325,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.37
   symbol: "\u0262"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  uvular      '
+  classes: 'consonant voiceless    uvular      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless uvular fricative
@@ -677,15 +1361,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: "\u03C7"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  uvular      '
+  classes: 'consonant voiced    uvular      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced uvular fricative
@@ -695,15 +1397,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u0281"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  pharyngeal      '
+  classes: 'consonant voiceless    pharyngeal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: pharyngeal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless pharyngeal fricative
@@ -713,15 +1433,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: "\u0127"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  pharyngeal      '
+  classes: 'consonant voiced    pharyngeal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: pharyngeal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced pharyngeal fricative
@@ -731,15 +1469,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u0295"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    fricative  glottal      '
+  classes: 'consonant voiceless    glottal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: glottal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiceless glottal fricative
@@ -749,15 +1505,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.79
+  sonority: 4.93
   symbol: h
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    fricative  glottal      '
+  classes: 'consonant voiced    glottal      fricative  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: fricative
+      near: ''
+      opening: ''
+      place: glottal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: fricative
   name: voiced glottal fricative
@@ -767,15 +1541,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 4.97
   symbol: "\u0266"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     stop  glottal      '
+  classes: 'consonant    glottal       stop  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: stop
+      near: ''
+      opening: ''
+      place: glottal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: stop
   name: glottal stop
@@ -785,15 +1577,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.74
+  sonority: 4.33
   symbol: "\u0294"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    affricate  palato-alveolar      '
+  classes: 'consonant voiceless    palato-alveolar      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: palato-alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiceless palato-alveolar affricate
@@ -803,15 +1613,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.74
   symbol: "t\u0283"
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    affricate  palato-alveolar      '
+  classes: 'consonant voiced    palato-alveolar      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: palato-alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiced palato-alveolar affricate
@@ -821,15 +1649,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 4.78
   symbol: "d\u0292"
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    affricate  alveolar      '
+  classes: 'consonant voiceless    alveolar      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiceless alveolar affricate
@@ -839,15 +1685,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.74
   symbol: ts
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    affricate  alveolar      '
+  classes: 'consonant voiced    alveolar      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiced
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiced alveolar affricate
@@ -857,15 +1721,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.8
+  sonority: 4.78
   symbol: dz
   tendency: ''
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    affricate  velar      '
+  classes: 'consonant voiceless    velar      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiceless velar affricate
@@ -875,15 +1757,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.74
   symbol: kx
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    affricate  labiodental      '
+  classes: 'consonant voiceless    labiodental      affricate  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: affricate
+      near: ''
+      opening: ''
+      place: labiodental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: voiceless
+      vowel: ''
   lateral: ''
   manner: affricate
   name: voiceless labiodental affricate
@@ -893,15 +1793,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.77
+  sonority: 4.74
   symbol: pf
   tendency: ''
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  bilabial      '
+  classes: 'consonant    bilabial       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: bilabial
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: bilabial nasal
@@ -911,15 +1829,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: m
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  alveolar      '
+  classes: 'consonant    alveolar       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: alveolar nasal
@@ -929,15 +1865,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: n
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  velar      '
+  classes: 'consonant    velar       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: velar nasal
@@ -947,15 +1901,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: "\u014B"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  retroflex      '
+  classes: 'consonant    retroflex       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: retroflex
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: retroflex nasal
@@ -965,15 +1937,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: "\u0273"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  palatal      '
+  classes: 'consonant    palatal       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: palatal nasal
@@ -983,15 +1973,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: "\u0272"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     nasal  uvular      '
+  classes: 'consonant    uvular       nasal  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: nasal
   name: uvular nasal
@@ -1001,15 +2009,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.81
+  sonority: 5.28
   symbol: "\u0274"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  lateral   approximant  alveolar      '
+  classes: 'consonant    alveolar       approximant lateral '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: lateral
+      manner: approximant
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: lateral
   manner: approximant
   name: alveolar lateral approximant
@@ -1019,15 +2045,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 7.08
+  sonority: 7.2
   symbol: l
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  lateral   approximant  alveolar     '
+  classes: 'consonant palatalised    alveolar      approximant lateral '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: lateral
+      manner: approximant
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: ''
+      vowel: ''
   lateral: lateral
   manner: approximant
   name: palatalised alveolar lateral approximant
@@ -1037,15 +2081,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 7.08
+  sonority: 7.2
   symbol: "l\u02B2"
   tendency: palatalised
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  lateral   approximant  palatal      '
+  classes: 'consonant    palatal       approximant lateral '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: lateral
+      manner: approximant
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: lateral
   manner: approximant
   name: palatal lateral approximant
@@ -1055,15 +2117,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 7.08
+  sonority: 7.2
   symbol: "\u028E"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     trill  alveolar      '
+  classes: 'consonant    alveolar       trill  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: trill
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: trill
   name: alveolar trill
@@ -1073,15 +2153,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.44
   symbol: r
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised     trill  alveolar     '
+  classes: 'consonant palatalised    alveolar      trill  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: trill
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: trill
   name: palatalised alveolar trill
@@ -1091,15 +2189,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.44
   symbol: "r\u02B2"
   tendency: palatalised
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     flap  alveolar      '
+  classes: 'consonant    alveolar       flap  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: flap
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: flap
   name: alveolar flap
@@ -1109,15 +2225,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.87
+  sonority: 5.88
   symbol: "\u027E"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised     flap  alveolar     '
+  classes: 'consonant palatalised    alveolar      flap  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: flap
+      near: ''
+      opening: ''
+      place: alveolar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: flap
   name: palatalised alveolar flap
@@ -1127,15 +2261,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.87
+  sonority: 5.88
   symbol: "\u027E\u02B2"
   tendency: palatalised
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     trill  uvular      '
+  classes: 'consonant    uvular       trill  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: trill
+      near: ''
+      opening: ''
+      place: uvular
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: trill
   name: uvular trill
@@ -1145,15 +2297,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.83
+  sonority: 5.44
   symbol: "\u0280"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     approximant  palatal      '
+  classes: 'consonant    palatal       approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: palatal approximant
@@ -1163,15 +2333,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: j
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     approximant  labiovelar      '
+  classes: 'consonant    labiovelar       approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: labiovelar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: labiovelar approximant
@@ -1181,15 +2369,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: w
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     approximant  labiodental      '
+  classes: 'consonant    labiodental       approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: labiodental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: labiodental approximant
@@ -1199,15 +2405,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: "\u028B"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised     approximant  labiodental     '
+  classes: 'consonant palatalised    labiodental      approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: labiodental
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: palatalised
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: palatalised labiodental approximant
@@ -1217,15 +2441,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: "\u028B\u02B2"
   tendency: palatalised
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     approximant  labial-palatal      '
+  classes: 'consonant    labial-palatal       approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: labial-palatal
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: labial-palatal approximant
@@ -1235,15 +2477,33 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: "\u0265"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant     approximant  velar      '
+  classes: 'consonant    velar       approximant  '
   consonant: consonant
   ejective: ''
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: consonant
+      ejective: ''
+      lateral: ''
+      manner: approximant
+      near: ''
+      opening: ''
+      place: velar
+      position: ''
+      release: ''
+      rounding: ''
+      tendency: ''
+      voice: ''
+      vowel: ''
   lateral: ''
   manner: approximant
   name: velar approximant
@@ -1253,17 +2513,35 @@
   position: ''
   release: ''
   rounding: ''
-  sonority: 5.88
+  sonority: 6.02
   symbol: "\u0270"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
   backness: 0.0
-  classes: vowel     high       front unrounded
+  classes: vowel     front unrounded       high
   consonant: ''
   ejective: ''
   height: 1.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high front unrounded vowel
@@ -1275,17 +2553,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: i
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: vowel near- near-     high      front unrounded
+  classes: vowel near- near-    front unrounded       high
   consonant: ''
   ejective: ''
   height: 0.875
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: near- near-
+      opening: high
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: near-high near-front unrounded vowel
@@ -1297,17 +2593,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: "\u026A"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: vowel     high       central unrounded
+  classes: vowel     central unrounded       high
   consonant: ''
   ejective: ''
   height: 1.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high
+      place: ''
+      position: central
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high central unrounded vowel
@@ -1319,17 +2633,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: "\u0268"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     high       back rounded
+  classes: vowel     back rounded       high
   consonant: ''
   ejective: ''
   height: 1.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high
+      place: ''
+      position: back
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high back rounded vowel
@@ -1341,17 +2673,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: u
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.75
-  classes: vowel near- near-     high      back rounded
+  classes: vowel near- near-    back rounded       high
   consonant: ''
   ejective: ''
   height: 0.875
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: near- near-
+      opening: high
+      place: ''
+      position: back
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: near-high near-back rounded vowel
@@ -1363,17 +2713,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: "\u028A"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     high-mid       front unrounded
+  classes: vowel     front unrounded       high-mid
   consonant: ''
   ejective: ''
   height: 0.75
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high-mid
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high-mid front unrounded vowel
@@ -1385,17 +2753,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.02
+  sonority: 11.13
   symbol: e
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel    nasal high-mid       front unrounded
+  classes: vowel     front unrounded     nasal  high-mid
   consonant: ''
   ejective: ''
   height: 0.75
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: nasal
+      near: ''
+      opening: high-mid
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: nasal
   name: high-mid front unrounded nasal vowel
@@ -1407,17 +2793,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.22
+  sonority: 11.55
   symbol: "\u1EBD"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     low-mid       front unrounded
+  classes: vowel     front unrounded       low-mid
   consonant: ''
   ejective: ''
   height: 0.25
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: low-mid
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: low-mid front unrounded vowel
@@ -1429,17 +2833,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.01
+  sonority: 13.03
   symbol: "\u025B"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     high-mid       back rounded
+  classes: vowel     back rounded       high-mid
   consonant: ''
   ejective: ''
   height: 0.75
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high-mid
+      place: ''
+      position: back
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high-mid back rounded vowel
@@ -1451,17 +2873,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.02
+  sonority: 11.13
   symbol: o
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     low-mid       back rounded
+  classes: vowel     back rounded       low-mid
   consonant: ''
   ejective: ''
   height: 0.25
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: low-mid
+      place: ''
+      position: back
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: low-mid back rounded vowel
@@ -1473,17 +2913,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.01
+  sonority: 13.03
   symbol: "\u0254"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     low-mid       back unrounded
+  classes: vowel     back unrounded       low-mid
   consonant: ''
   ejective: ''
   height: 0.25
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: low-mid
+      place: ''
+      position: back
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: low-mid back unrounded vowel
@@ -1495,17 +2953,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.01
+  sonority: 13.03
   symbol: "\u028C"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     low       front unrounded
+  classes: vowel     front unrounded       low
   consonant: ''
   ejective: ''
   height: 0.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: low
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: low front unrounded vowel
@@ -1517,17 +2993,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.01
+  sonority: 13.84
   symbol: a
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel near-     low      front unrounded
+  classes: vowel near-    front unrounded       low
   consonant: ''
   ejective: ''
   height: 0.125
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: near-
+      opening: low
+      place: ''
+      position: front
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: near-low front unrounded vowel
@@ -1539,17 +3033,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.01
+  sonority: 13.84
   symbol: "\xE6"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     high       front rounded
+  classes: vowel     front rounded       high
   consonant: ''
   ejective: ''
   height: 1.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high
+      place: ''
+      position: front
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high front rounded vowel
@@ -1561,17 +3073,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: y
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: vowel near- near-     high      front rounded
+  classes: vowel near- near-    front rounded       high
   consonant: ''
   ejective: ''
   height: 0.875
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: near- near-
+      opening: high
+      place: ''
+      position: front
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: near-high near-front rounded vowel
@@ -1583,17 +3113,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: "\u028F"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     high-mid       front rounded
+  classes: vowel     front rounded       high-mid
   consonant: ''
   ejective: ''
   height: 0.75
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high-mid
+      place: ''
+      position: front
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high-mid front rounded vowel
@@ -1605,17 +3153,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.02
+  sonority: 11.13
   symbol: "\xF8"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     low-mid       front rounded
+  classes: vowel     front rounded       low-mid
   consonant: ''
   ejective: ''
   height: 0.25
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: low-mid
+      place: ''
+      position: front
+      release: ''
+      rounding: rounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: low-mid front rounded vowel
@@ -1627,17 +3193,35 @@
   release: ''
   rounded: true
   rounding: rounded
-  sonority: 21.01
+  sonority: 13.03
   symbol: "\u0153"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: vowel     mid       central unrounded
+  classes: vowel     central unrounded       mid
   consonant: ''
   ejective: ''
   height: 0.5
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: mid
+      place: ''
+      position: central
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: mid central unrounded vowel
@@ -1649,17 +3233,35 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.02
+  sonority: 12.14
   symbol: "\u0259"
   tendency: ''
   voice: ''
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     high       back unrounded
+  classes: vowel     back unrounded       high
   consonant: ''
   ejective: ''
   height: 1.0
+  ipa: !!python/object/apply:collections.defaultdict
+    args:
+    - *id001
+    dictitems:
+      aspiration: ''
+      consonant: ''
+      ejective: ''
+      lateral: ''
+      manner: ''
+      near: ''
+      opening: high
+      place: ''
+      position: back
+      release: ''
+      rounding: unrounded
+      tendency: ''
+      voice: ''
+      vowel: vowel
   lateral: ''
   manner: ''
   name: high back unrounded vowel
@@ -1671,7 +3273,7 @@
   release: ''
   rounded: false
   rounding: unrounded
-  sonority: 21.03
+  sonority: 9.96
   symbol: "\u026F"
   tendency: ''
   voice: ''

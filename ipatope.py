@@ -10,7 +10,7 @@ DATA = Path('./data')
 jinja_env = Environment(loader=FileSystemLoader('templates'),
                         # extensions=['jinja2_markdown.MarkdownExtension'],
                         undefined=DebugUndefined)
-template = jinja_env.get_template('phonemes.template.html')
+
 
 
 class AttrObject:
@@ -37,5 +37,10 @@ data = dict(
     sorters=sorters,
 )
 
+template = jinja_env.get_template('phonemes.template.html')
 with Path('index.html').open('w') as out:
     out.write(template.render(**data))
+
+code = jinja_env.get_template('ipatope.template.js')
+with Path('ipatope.js').open('w') as out:
+    out.write(code.render(**data))
