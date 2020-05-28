@@ -1,5 +1,5 @@
 - aspiration: ''
-  classes: 'consonant voiceless  stop    alveolar      '
+  classes: consonant voiceless         alveolar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -17,7 +17,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant ejective  stop   voiceless  alveolar     '
+  classes: consonant ejective  voiceless       alveolar   stop
   consonant: consonant
   ejective: ejective
   lateral: ''
@@ -35,7 +35,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated  stop  voiceless  alveolar      '
+  classes: consonant aspirated  voiceless       alveolar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -53,7 +53,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  stop   voiceless  alveolar     '
+  classes: consonant palatalised  voiceless       alveolar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -71,7 +71,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  stop    alveolar      '
+  classes: consonant voiced         alveolar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -89,7 +89,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  stop   voiced  alveolar     '
+  classes: consonant palatalised  voiced       alveolar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -107,7 +107,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  sibilant    alveolar      '
+  classes: consonant voiceless         alveolar   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -125,7 +125,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  sibilant    alveolar      '
+  classes: consonant voiced         alveolar   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -143,7 +143,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative  lateral  alveolar      '
+  classes: consonant voiceless lateral        alveolar   fricative
   consonant: consonant
   ejective: ''
   lateral: lateral
@@ -161,7 +161,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative  lateral  alveolar      '
+  classes: consonant voiced lateral        alveolar   fricative
   consonant: consonant
   ejective: ''
   lateral: lateral
@@ -179,7 +179,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    dental      '
+  classes: consonant voiceless         dental   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -197,7 +197,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    dental      '
+  classes: consonant voiced         dental   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -215,7 +215,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  sibilant    palato-alveolar      '
+  classes: consonant voiceless         palato-alveolar   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -233,7 +233,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  sibilant    alveolo-palatal      '
+  classes: consonant voiceless         alveolo-palatal   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -251,7 +251,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  sibilant   voiceless  palato-alveolar     '
+  classes: consonant palatalised  voiceless       palato-alveolar   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -269,7 +269,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  sibilant    palato-alveolar      '
+  classes: consonant voiced         palato-alveolar   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -287,7 +287,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  sibilant    alveolo-palatal      '
+  classes: consonant voiced         alveolo-palatal   sibilant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -305,7 +305,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  stop    palatal      '
+  classes: consonant voiceless         palatal   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -323,7 +323,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  stop    palatal      '
+  classes: consonant voiced         palatal   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -341,7 +341,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    palatal      '
+  classes: consonant voiceless         palatal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -359,7 +359,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    palatal      '
+  classes: consonant voiced         palatal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -377,7 +377,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  plosive    bilabial      '
+  classes: consonant voiceless         bilabial   plosive
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -395,7 +395,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  plosive    bilabial      '
+  classes: consonant voiced         bilabial   plosive
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -413,7 +413,7 @@
   voice: voiced
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated  plosive  voiced  bilabial      '
+  classes: consonant aspirated  voiced       bilabial   plosive
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -431,7 +431,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    labiodental      '
+  classes: consonant voiceless         labiodental   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -449,7 +449,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    labiodental      '
+  classes: consonant voiced         labiodental   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -467,7 +467,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    bilabial      '
+  classes: consonant voiceless         bilabial   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -485,7 +485,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    bilabial      '
+  classes: consonant voiced         bilabial   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -503,7 +503,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  stop    velar      '
+  classes: consonant voiceless         velar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -521,25 +521,25 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: '             '
-  consonant: ''
+  classes: consonant voiceless   labialised      velar   stop
+  consonant: consonant
   ejective: ''
   lateral: ''
-  manner: ''
+  manner: stop
   name: voiceless labialised velar stop
   near: ''
   opening: ''
-  place: ''
+  place: velar
   position: ''
   release: ''
   rounding: ''
-  sonority: 3.57
+  sonority: 5.74
   symbol: "k\u02B7"
-  tendency: ''
-  voice: ''
+  tendency: labialised
+  voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant voiceless  stop aspirated   velar      '
+  classes: consonant voiceless     aspirated    velar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -557,7 +557,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  stop   voiceless  velar     '
+  classes: consonant palatalised  voiceless       velar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -575,7 +575,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  stop    velar      '
+  classes: consonant voiced         velar   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -593,7 +593,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    velar      '
+  classes: consonant voiceless         velar   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -611,7 +611,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    velar      '
+  classes: consonant voiced         velar   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -629,7 +629,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  stop    uvular      '
+  classes: consonant voiceless         uvular   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -647,7 +647,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  stop    uvular      '
+  classes: consonant voiced         uvular   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -665,7 +665,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    uvular      '
+  classes: consonant voiceless         uvular   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -683,7 +683,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    uvular      '
+  classes: consonant voiced         uvular   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -701,7 +701,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    pharyngeal      '
+  classes: consonant voiceless         pharyngeal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -719,7 +719,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    pharyngeal      '
+  classes: consonant voiced         pharyngeal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -737,7 +737,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  fricative    glottal      '
+  classes: consonant voiceless         glottal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -755,7 +755,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  fricative    glottal      '
+  classes: consonant voiced         glottal   fricative
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -773,7 +773,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  stop     glottal      '
+  classes: consonant          glottal   stop
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -791,7 +791,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  affricate    palato-alveolar      '
+  classes: consonant voiceless         palato-alveolar   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -809,7 +809,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  affricate    palato-alveolar      '
+  classes: consonant voiced         palato-alveolar   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -827,7 +827,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  affricate    alveolar      '
+  classes: consonant voiceless         alveolar   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -845,7 +845,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced  affricate    alveolar      '
+  classes: consonant voiced         alveolar   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -863,7 +863,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  affricate    velar      '
+  classes: consonant voiceless         velar   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -881,7 +881,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless  affricate    labiodental      '
+  classes: consonant voiceless         labiodental   affricate
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -899,7 +899,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     bilabial      '
+  classes: consonant          bilabial   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -917,7 +917,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     alveolar      '
+  classes: consonant          alveolar   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -935,7 +935,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     velar      '
+  classes: consonant          velar   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -953,7 +953,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     retroflex      '
+  classes: consonant          retroflex   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -971,7 +971,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     palatal      '
+  classes: consonant          palatal   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -989,7 +989,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  nasal     uvular      '
+  classes: consonant          uvular   nasal
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1007,7 +1007,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant  lateral   alveolar      '
+  classes: consonant lateral         alveolar   approximant
   consonant: consonant
   ejective: ''
   lateral: lateral
@@ -1025,7 +1025,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  approximant  lateral   alveolar     '
+  classes: consonant palatalised lateral        alveolar   approximant
   consonant: consonant
   ejective: ''
   lateral: lateral
@@ -1043,7 +1043,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant  lateral   palatal      '
+  classes: consonant lateral         palatal   approximant
   consonant: consonant
   ejective: ''
   lateral: lateral
@@ -1061,7 +1061,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  trill     alveolar      '
+  classes: consonant          alveolar   trill
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1079,7 +1079,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  trill     alveolar     '
+  classes: consonant palatalised         alveolar   trill
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1097,7 +1097,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  flap     alveolar      '
+  classes: consonant          alveolar   flap
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1115,7 +1115,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  flap     alveolar     '
+  classes: consonant palatalised         alveolar   flap
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1133,7 +1133,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  trill     uvular      '
+  classes: consonant          uvular   trill
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1151,7 +1151,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant     palatal      '
+  classes: consonant          palatal   approximant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1169,7 +1169,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant     labiovelar      '
+  classes: consonant          labiovelar   approximant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1187,7 +1187,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant     labiodental      '
+  classes: consonant          labiodental   approximant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1205,7 +1205,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised  approximant     labiodental     '
+  classes: consonant palatalised         labiodental   approximant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1223,25 +1223,25 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: '             '
-  consonant: ''
+  classes: consonant          labial-palatal   approximant
+  consonant: consonant
   ejective: ''
   lateral: ''
-  manner: ''
+  manner: approximant
   name: labial-palatal approximant
   near: ''
   opening: ''
-  place: ''
+  place: labial-palatal
   position: ''
   release: ''
   rounding: ''
-  sonority: 3.57
+  sonority: 5.88
   symbol: "\u0265"
   tendency: ''
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant  approximant     velar      '
+  classes: consonant          velar   approximant
   consonant: consonant
   ejective: ''
   lateral: ''
@@ -1260,7 +1260,7 @@
   vowel: ''
 - aspiration: ''
   backness: 0.0
-  classes: 'vowel unrounded       high front    '
+  classes: 'vowel   front      high  unrounded  '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -1282,7 +1282,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: 'vowel near- near- unrounded       high front   '
+  classes: 'vowel near- near-   front      high  unrounded '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -1304,7 +1304,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: 'vowel unrounded       high central    '
+  classes: 'vowel   central      high  unrounded  '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -1326,7 +1326,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: 'vowel rounded       high back    '
+  classes: 'vowel   back      high  rounded  '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -1348,7 +1348,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.75
-  classes: 'vowel near- near- rounded       high back   '
+  classes: 'vowel near- near-   back      high  rounded '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -1370,7 +1370,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: '             '
+  classes: 'vowel   front      high-mid  unrounded  '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -1379,42 +1379,42 @@
   name: high-mid front unrounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: high-mid
   place: ''
-  position: ''
+  position: front
   release: ''
   rounded: false
-  rounding: ''
-  sonority: 3.57
+  rounding: unrounded
+  sonority: 21.02
   symbol: e
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: '             '
+  classes: vowel   front      high-mid  unrounded  nasal
   consonant: ''
   ejective: ''
   height: 0.75
   lateral: ''
-  manner: ''
+  manner: nasal
   name: high-mid front unrounded nasal vowel
   nasal: true
   near: ''
-  opening: ''
+  opening: high-mid
   place: ''
-  position: ''
+  position: front
   release: ''
   rounded: false
-  rounding: ''
-  sonority: 3.57
+  rounding: unrounded
+  sonority: 21.22
   symbol: "\u1EBD"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: '             '
+  classes: 'vowel   front      low-mid  unrounded  '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -1423,20 +1423,20 @@
   name: low-mid front unrounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: low-mid
   place: ''
-  position: ''
+  position: front
   release: ''
   rounded: false
-  rounding: ''
-  sonority: 3.57
+  rounding: unrounded
+  sonority: 21.01
   symbol: "\u025B"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: '             '
+  classes: 'vowel   back      high-mid  rounded  '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -1445,20 +1445,20 @@
   name: high-mid back rounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: high-mid
   place: ''
-  position: ''
+  position: back
   release: ''
   rounded: true
-  rounding: ''
-  sonority: 3.57
+  rounding: rounded
+  sonority: 21.02
   symbol: o
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: '             '
+  classes: 'vowel   back      low-mid  rounded  '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -1467,20 +1467,20 @@
   name: low-mid back rounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: low-mid
   place: ''
-  position: ''
+  position: back
   release: ''
   rounded: true
-  rounding: ''
-  sonority: 3.57
+  rounding: rounded
+  sonority: 21.01
   symbol: "\u0254"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: '             '
+  classes: 'vowel   back      low-mid  unrounded  '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -1489,20 +1489,20 @@
   name: low-mid back unrounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: low-mid
   place: ''
-  position: ''
+  position: back
   release: ''
   rounded: false
-  rounding: ''
-  sonority: 3.57
+  rounding: unrounded
+  sonority: 21.01
   symbol: "\u028C"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: 'vowel unrounded       low front    '
+  classes: 'vowel   front      low  unrounded  '
   consonant: ''
   ejective: ''
   height: 0.0
@@ -1524,7 +1524,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: 'vowel near- unrounded       low front   '
+  classes: 'vowel near-   front      low  unrounded '
   consonant: ''
   ejective: ''
   height: 0.125
@@ -1546,7 +1546,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: 'vowel rounded       high front    '
+  classes: 'vowel   front      high  rounded  '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -1568,7 +1568,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: 'vowel near- near- rounded       high front   '
+  classes: 'vowel near- near-   front      high  rounded '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -1590,7 +1590,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: '             '
+  classes: 'vowel   front      high-mid  rounded  '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -1599,20 +1599,20 @@
   name: high-mid front rounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: high-mid
   place: ''
-  position: ''
+  position: front
   release: ''
   rounded: true
-  rounding: ''
-  sonority: 3.57
+  rounding: rounded
+  sonority: 21.02
   symbol: "\xF8"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: '             '
+  classes: 'vowel   front      low-mid  rounded  '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -1621,20 +1621,20 @@
   name: low-mid front rounded vowel
   nasal: false
   near: ''
-  opening: ''
+  opening: low-mid
   place: ''
-  position: ''
+  position: front
   release: ''
   rounded: true
-  rounding: ''
-  sonority: 3.57
+  rounding: rounded
+  sonority: 21.01
   symbol: "\u0153"
   tendency: ''
   voice: ''
-  vowel: ''
+  vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: 'vowel unrounded       mid central    '
+  classes: 'vowel   central      mid  unrounded  '
   consonant: ''
   ejective: ''
   height: 0.5
@@ -1656,7 +1656,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: 'vowel unrounded       high back    '
+  classes: 'vowel   back      high  unrounded  '
   consonant: ''
   ejective: ''
   height: 1.0
