@@ -105,7 +105,6 @@ body {
   background: #888;
   color: #262524;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: lighter;
 }
 
 .phoneme-item > * {
@@ -142,7 +141,6 @@ body {
   letter-spacing: 0;
   font-size: 12px;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: lighter;
 }
 
 .phoneme-item .symbol {

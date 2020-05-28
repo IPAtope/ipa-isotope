@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin' rel='stylesheet' type='text/css' />
 
 </head>
 
@@ -31,7 +30,7 @@
         <div class="ui-group">
             <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> {{group}} </label></div>
             <div class="button-group" data-filter-group="{{ group }}">
-                <button class="ui-group-item btn btn-sm button is-checked" data-filter="*">all</button>
+                <button class="ui-group-item btn  button is-checked" data-filter="*">all</button>
                 {% for filter in filters %}
                 {% include "filter.template.html" with context %}
                 {% endfor %}
@@ -47,7 +46,7 @@
         <div class="ui-group">
             <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> sort by </label></div>
             <div class="button-group" data-filter-group="{{ group }}">
-                <button class="ui-group-item btn btn-sm button is-checked" data-sort-by="original-order">original</button>
+                <button class="ui-group-item btn  button is-checked" data-sort-by="original-order">original</button>
                 {% for sorter in sorters %}
                 {% include "sorter.template.html" with context %}
                 {% endfor %}
@@ -105,6 +104,17 @@
 
 
 </body>
+
+<style>
+#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}
+</style>
+<footer id="footer">
+<p>&copy; 2020 <a href="https://github.com/ipatope/" target="_blank"> <cite>
+    <a href="https://github.com/aalok-sathe" target="_blank">aalok-sathe</a>
+    and
+    <a href="https://github.com/shinjinighosh" target="_blank">shinjinighosh</a>
+</footer>
+
 
 <!--LOCAL-->
 <link href="ipatope.css" rel="stylesheet" type="text/css">
