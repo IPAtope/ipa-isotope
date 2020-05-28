@@ -1,5 +1,5 @@
 - aspiration: ''
-  classes: 'consonant voiceless    alveolar      stop  '
+  classes: 'consonant voiceless    stop       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -35,7 +35,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant ejective   alveolar      voiceless stop  '
+  classes: 'consonant ejective   voiceless  stop      alveolar '
   consonant: consonant
   ejective: ejective
   ipa: !!python/object/apply:collections.defaultdict
@@ -71,7 +71,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated    alveolar     voiceless stop  '
+  classes: 'consonant aspirated  voiceless  stop       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -107,7 +107,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    alveolar     voiceless stop  '
+  classes: 'consonant palatalised   voiceless stop       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -143,7 +143,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    alveolar      stop  '
+  classes: 'consonant voiced    stop       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -179,7 +179,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    alveolar     voiced stop  '
+  classes: 'consonant palatalised   voiced stop       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -215,7 +215,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    alveolar      sibilant  '
+  classes: 'consonant voiceless    sibilant       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -251,7 +251,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    alveolar      sibilant  '
+  classes: 'consonant voiced    sibilant       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -287,7 +287,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    alveolar      fricative lateral '
+  classes: 'consonant voiceless lateral   fricative       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -323,7 +323,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    alveolar      fricative lateral '
+  classes: 'consonant voiced lateral   fricative       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -359,7 +359,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    dental      fricative  '
+  classes: 'consonant voiceless    fricative       dental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -395,7 +395,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    dental      fricative  '
+  classes: 'consonant voiced    fricative       dental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -431,7 +431,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    palato-alveolar      sibilant  '
+  classes: 'consonant voiceless    sibilant       palato-alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -467,7 +467,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    alveolo-palatal      sibilant  '
+  classes: 'consonant voiceless    sibilant       alveolo-palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -503,7 +503,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    palato-alveolar     voiceless sibilant  '
+  classes: 'consonant palatalised   voiceless sibilant       palato-alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -539,7 +539,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    palato-alveolar      sibilant  '
+  classes: 'consonant voiced    sibilant       palato-alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -575,7 +575,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    alveolo-palatal      sibilant  '
+  classes: 'consonant voiced    sibilant       alveolo-palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -611,7 +611,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    palatal      stop  '
+  classes: 'consonant voiceless    stop       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -647,7 +647,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    palatal      stop  '
+  classes: 'consonant voiced    stop       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -683,7 +683,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    palatal      fricative  '
+  classes: 'consonant voiceless    fricative       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -719,7 +719,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    palatal      fricative  '
+  classes: 'consonant voiced    fricative       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -755,7 +755,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    bilabial      plosive  '
+  classes: 'consonant voiceless    plosive       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -791,7 +791,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    bilabial      plosive  '
+  classes: 'consonant voiced    plosive       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -827,7 +827,7 @@
   voice: voiced
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant aspirated    bilabial     voiced plosive  '
+  classes: 'consonant aspirated  voiced  plosive       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -863,7 +863,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    labiodental      fricative  '
+  classes: 'consonant voiceless    fricative       labiodental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -899,7 +899,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    labiodental      fricative  '
+  classes: 'consonant voiced    fricative       labiodental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -935,7 +935,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    bilabial      fricative  '
+  classes: 'consonant voiceless    fricative       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -971,7 +971,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    bilabial      fricative  '
+  classes: 'consonant voiced    fricative       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1007,7 +1007,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    velar      stop  '
+  classes: 'consonant voiceless    stop       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1043,7 +1043,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    velar     labialised stop  '
+  classes: 'consonant voiceless   labialised stop       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1079,7 +1079,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: aspirated
-  classes: 'consonant voiceless    velar   aspirated   stop  '
+  classes: 'consonant voiceless  aspirated  stop       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1115,7 +1115,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    velar     voiceless stop  '
+  classes: 'consonant palatalised   voiceless stop       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1151,7 +1151,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    velar      stop  '
+  classes: 'consonant voiced    stop       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1187,7 +1187,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    velar      fricative  '
+  classes: 'consonant voiceless    fricative       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1223,7 +1223,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    velar      fricative  '
+  classes: 'consonant voiced    fricative       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1259,7 +1259,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    uvular      stop  '
+  classes: 'consonant voiceless    stop       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1295,7 +1295,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    uvular      stop  '
+  classes: 'consonant voiced    stop       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1331,7 +1331,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    uvular      fricative  '
+  classes: 'consonant voiceless    fricative       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1367,7 +1367,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    uvular      fricative  '
+  classes: 'consonant voiced    fricative       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1403,7 +1403,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    pharyngeal      fricative  '
+  classes: 'consonant voiceless    fricative       pharyngeal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1439,7 +1439,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    pharyngeal      fricative  '
+  classes: 'consonant voiced    fricative       pharyngeal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1475,7 +1475,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    glottal      fricative  '
+  classes: 'consonant voiceless    fricative       glottal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1511,7 +1511,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    glottal      fricative  '
+  classes: 'consonant voiced    fricative       glottal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1547,7 +1547,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    glottal       stop  '
+  classes: 'consonant     stop       glottal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1583,7 +1583,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    palato-alveolar      affricate  '
+  classes: 'consonant voiceless    affricate       palato-alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1619,7 +1619,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    palato-alveolar      affricate  '
+  classes: 'consonant voiced    affricate       palato-alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1655,7 +1655,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    alveolar      affricate  '
+  classes: 'consonant voiceless    affricate       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1691,7 +1691,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiced    alveolar      affricate  '
+  classes: 'consonant voiced    affricate       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1727,7 +1727,7 @@
   voice: voiced
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    velar      affricate  '
+  classes: 'consonant voiceless    affricate       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1763,7 +1763,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant voiceless    labiodental      affricate  '
+  classes: 'consonant voiceless    affricate       labiodental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1799,7 +1799,7 @@
   voice: voiceless
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    bilabial       nasal  '
+  classes: 'consonant     nasal       bilabial '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1835,7 +1835,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    alveolar       nasal  '
+  classes: 'consonant     nasal       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1871,7 +1871,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    velar       nasal  '
+  classes: 'consonant     nasal       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1907,7 +1907,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    retroflex       nasal  '
+  classes: 'consonant     nasal       retroflex '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1943,7 +1943,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    palatal       nasal  '
+  classes: 'consonant     nasal       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -1979,7 +1979,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    uvular       nasal  '
+  classes: 'consonant     nasal       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2015,7 +2015,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    alveolar       approximant lateral '
+  classes: 'consonant lateral    approximant       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2051,7 +2051,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    alveolar      approximant lateral '
+  classes: 'consonant palatalised lateral   approximant       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2087,7 +2087,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    palatal       approximant lateral '
+  classes: 'consonant lateral    approximant       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2123,7 +2123,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    alveolar       trill  '
+  classes: 'consonant     trill       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2159,7 +2159,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    alveolar      trill  '
+  classes: 'consonant palatalised    trill       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2195,7 +2195,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    alveolar       flap  '
+  classes: 'consonant     flap       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2231,7 +2231,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    alveolar      flap  '
+  classes: 'consonant palatalised    flap       alveolar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2267,7 +2267,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    uvular       trill  '
+  classes: 'consonant     trill       uvular '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2303,7 +2303,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    palatal       approximant  '
+  classes: 'consonant     approximant       palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2339,7 +2339,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    labiovelar       approximant  '
+  classes: 'consonant     approximant       labiovelar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2375,7 +2375,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    labiodental       approximant  '
+  classes: 'consonant     approximant       labiodental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2411,7 +2411,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant palatalised    labiodental      approximant  '
+  classes: 'consonant palatalised    approximant       labiodental '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2447,7 +2447,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    labial-palatal       approximant  '
+  classes: 'consonant     approximant       labial-palatal '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2483,7 +2483,7 @@
   voice: ''
   vowel: ''
 - aspiration: ''
-  classes: 'consonant    velar       approximant  '
+  classes: 'consonant     approximant       velar '
   consonant: consonant
   ejective: ''
   ipa: !!python/object/apply:collections.defaultdict
@@ -2520,7 +2520,7 @@
   vowel: ''
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front unrounded       high
+  classes: 'vowel       high  front unrounded   '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -2560,7 +2560,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: vowel near- near-    front unrounded       high
+  classes: 'vowel near- near-       high  front unrounded  '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -2600,7 +2600,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: vowel     central unrounded       high
+  classes: 'vowel       high  central unrounded   '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -2640,7 +2640,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     back rounded       high
+  classes: 'vowel       high  back rounded   '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -2680,7 +2680,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.75
-  classes: vowel near- near-    back rounded       high
+  classes: 'vowel near- near-       high  back rounded  '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -2720,7 +2720,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front unrounded       high-mid
+  classes: 'vowel       high-mid  front unrounded   '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -2760,7 +2760,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front unrounded     nasal  high-mid
+  classes: 'vowel     nasal  high-mid  front unrounded   '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -2800,7 +2800,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front unrounded       low-mid
+  classes: 'vowel       low-mid  front unrounded   '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -2840,7 +2840,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     back rounded       high-mid
+  classes: 'vowel       high-mid  back rounded   '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -2880,7 +2880,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     back rounded       low-mid
+  classes: 'vowel       low-mid  back rounded   '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -2920,7 +2920,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     back unrounded       low-mid
+  classes: 'vowel       low-mid  back unrounded   '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -2960,7 +2960,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front unrounded       low
+  classes: 'vowel       low  front unrounded   '
   consonant: ''
   ejective: ''
   height: 0.0
@@ -3000,7 +3000,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel near-    front unrounded       low
+  classes: 'vowel near-       low  front unrounded  '
   consonant: ''
   ejective: ''
   height: 0.125
@@ -3040,7 +3040,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front rounded       high
+  classes: 'vowel       high  front rounded   '
   consonant: ''
   ejective: ''
   height: 1.0
@@ -3080,7 +3080,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.25
-  classes: vowel near- near-    front rounded       high
+  classes: 'vowel near- near-       high  front rounded  '
   consonant: ''
   ejective: ''
   height: 0.875
@@ -3120,7 +3120,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front rounded       high-mid
+  classes: 'vowel       high-mid  front rounded   '
   consonant: ''
   ejective: ''
   height: 0.75
@@ -3160,7 +3160,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.0
-  classes: vowel     front rounded       low-mid
+  classes: 'vowel       low-mid  front rounded   '
   consonant: ''
   ejective: ''
   height: 0.25
@@ -3200,7 +3200,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 0.5
-  classes: vowel     central unrounded       mid
+  classes: 'vowel       mid  central unrounded   '
   consonant: ''
   ejective: ''
   height: 0.5
@@ -3240,7 +3240,7 @@
   vowel: vowel
 - aspiration: ''
   backness: 1.0
-  classes: vowel     back unrounded       high
+  classes: 'vowel       high  back unrounded   '
   consonant: ''
   ejective: ''
   height: 1.0

@@ -177,22 +177,11 @@ body {
 }
 
 /* coloring all at first such that unknowns get color too */
-.phoneme-item                                   { background: #F08; background: hsl( 324, 80%, 80%); }
-.phoneme-item.plosive,.stop                     { background: #F00; background: hsl(   0, 80%, 80%); }
-.phoneme-item.fricative,.affricate,.sibilant    { background: #F80; background: hsl(  36, 80%, 80%); }
-.phoneme-item.nasal                             { background: #F80; background: #C5AEB4; }
-.phoneme-item.trill                             { background: #0F0; background: hsl( 108, 60%, 80%); }
-.phoneme-item.tap,.flap                         { background: #0F8; background: #b3b300; }
-.phoneme-item.approximant                       { background: #0FF; background: hsl( 290, 40%, 80%); }
-.phoneme-item.vowel                             { background: #08F; background: hsl( 216, 80%, 80%); }
-/* .phoneme-item.approximant.fricative             { background: #F0F; background: hsl( 288, 80%, 80%); } */
-
-/* .phoneme-item                                   { background: #B29DB6; }
-.phoneme-item.plosive,.stop                     { background: #ffc590; }
-.phoneme-item.fricative,.affricate,.sibilant    { background: #afafaf; }
-.phoneme-item.nasal                             { background: #ABC3CE; }
-.phoneme-item.trill                             { background: #C5AEB4; }
-.phoneme-item.tap,.flap                         { background: #7B8FA5; }
-.phoneme-item.approximant:not(.fricative)       { background: #99B49F; }
+.phoneme-item                                   { background: hsl( 324, 80%, 80%); }
+.phoneme-item.plosive,.stop                     { background: hsl(   0, 80%, 80%); }
+.phoneme-item.fricative,.affricate,.sibilant    { background: hsl(  36, 80%, 80%); }
+.phoneme-item.nasal                             { background: #C5AEB4; }
+.phoneme-item.trill                             { background: hsl( 108, 60%, 80%); }
+.phoneme-item.tap,.flap                         { background: #b3b300; }
+.phoneme-item.approximant                       { background: hsl( 290, 40%, 80%); }
 .phoneme-item.vowel                             { background: hsl( 216, 80%, 80%); }
-.phoneme-item.approximant.fricative             { background: ##748fe0; } */
