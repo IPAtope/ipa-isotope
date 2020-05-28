@@ -26,6 +26,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./public
-          publish_branch: master  # deploying branch
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allow_empty_commit: true
