@@ -1,4 +1,4 @@
 
 [submodule "phonemelib"]
 	path = phonemes
-	url = git@github.com:aalok-sathe/phonemes
+	url = https://github.com/aalok-sathe/phonemes.git
