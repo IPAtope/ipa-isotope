@@ -21,9 +21,15 @@
 </head>
 
 <body>
-    <h1 class="title">IPAtope</h1>
+    <div id="particles-js"></div>
 
-    <h4>Filter</h4>
+    <div class="ui-group">
+        <h1 class="ui-group-item title">IPAtope</h1>
+    </div>
+
+    <div class="ui-group">
+        <h4 class="ui-group-item">Filter</h4>
+    </div>
 
     <div class="filters controls">
 
@@ -41,7 +47,9 @@
 
     </div>
 
-    <h4>Sort</h4>
+    <div class="ui-group">
+        <h4 class="ui-group-item">Sort</h4>
+    </div>
 
     <div class="sorters controls">
         <div class="ui-group">
@@ -55,15 +63,14 @@
         </div>
     </div>
 
-    <!-- <div id="sorts" class="button-group"> <button class="button is-checked" data-sort-by="original-order">original order</button>
-        <button class="button" data-sort-by="name">name</button>
-        <button class="button" data-sort-by="symbol">symbol</button>
-        <button class="button" data-sort-by="sonority">sonority</button>
-        <button class="button" data-sort-by="category">category</button>
-    </div> -->
-
-    <h4>Controls</h4>
+    <div class="ui-group">
+        <h4 class="ui-group-item">Controls</h4>
+    </div>
+    
     <div class="ui-group-bootstrap">
+        <!-- <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> control </label></div>
+        </div> -->
         <div class="controls btn-toolbar" style="margin: 5px;" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group mr-2" role="group" aria-label="">
                 <button class="ui-group-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$grid.isotope({sortBy: 'original-order', filter: '*'});">
@@ -71,10 +78,10 @@
                 </button>
             </div>
             <div class="btn-group mr-2" role="group" aria-label="">
-                <button class="ui-group-item btn btn-secondary btn-sm" type="button" name="button" onclick="$grid.isotope('shuffle');">
+                <button class="ui-group-bootstrap-item btn btn-secondary btn-sm" type="button" name="button" onclick="$grid.isotope('shuffle');">
                     shuffle
                 </button>
-                <button class="ui-group-item btn btn-secondary btn-sm" type="button" name="button" onclick="$( '.phoneme-item' ).each(function( index ) {
+                <button class="ui-group-bootstrap-item btn btn-secondary btn-sm" type="button" name="button" onclick="$( '.phoneme-item' ).each(function( index ) {
                                 $(this).transition({
                                     top : Math.random() * (800 - $(this).height()),
                                     left : Math.random() * ($(window).width() - $(this).width() - 100),
@@ -85,14 +92,13 @@
             </div>
             <div class="btn-group mr-2" role="group" aria-label="">
 
-                <div class="ui-group-item dropdown">
+                <div class="ui-group-bootstrap-item dropdown">
                     <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
                         toggle attributes
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         {% for attrtohide in 'name symbol sonority'.split() %}
-                        <button class="dropdown-item btn btn-secondary btn-sm" type="button" name="button"
-                                onclick="$('.phoneme-item>.{{attrtohide}}').toggleClass('hidden');">
+                        <button class="dropdown-item btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item>.{{attrtohide}}').toggleClass('hidden');">
                             {{ attrtohide }}
                         </button>
                         {% endfor %}
@@ -101,18 +107,16 @@
 
             </div>
             <div class="btn-group mr-2" role="group" aria-label="">
-                <div class="ui-group-item dropdown">
+                <div class="ui-group-bootstrap-item dropdown">
                     <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
                         theme
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button"
-                                onclick="$('.glass').css('background', '');
+                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$('.glass').css('background', '');
                                          $('.phoneme-item').removeClass('glass');">
                             pastel
                         </button>
-                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button"
-                                onclick="$('.phoneme-item').addClass('glass');
+                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item').addClass('glass');
                                 $('.glass').css('background', 'hsla(244,30%,80%,0.1)');">
                             glass
                         </button>
@@ -122,13 +126,11 @@
 
         </div>
     </div>
-    <br>
-    <h5 class="tip">Try dragging them around using the handle in the corner!
-        <div class="handle">
-        </div>
-    </h5>
 
-    <div id="particles-js"></div>
+    <div class="ui-group">
+        <h5 class="ui-group-item tip">Try dragging them around using the handle in the corner! </h5>
+    </div>
+
     <div class="grid">
         {% for phoneme in phonemes %}
         {% include "phoneme.template.html" with context %}

@@ -96,12 +96,12 @@ $('.sorters').on('click', '.button', function() {
             $('.button[data-filter~="{{ filter.fn }}"]').hover(function(e) {
                 $('.phoneme-item[class~="{{ target[1:] }}"]').css('background', '#d1b2dc');
                 $('.phoneme-item[class~="{{ target[1:] }}"]').css('outline', '3px dashed #723c86');
-                $('.phoneme-item[class~="{{ target[1:] }}"]').css('text-shadow', '#eee 0px 0px 2px')
+                $('.phoneme-item[class~="{{ target[1:] }}"]').css('text-shadow', '#eee 0px 0px 2px');
             }, function(e) {
                 $('.phoneme-item[class~="{{ target[1:] }}"]').css('background', 'hsla(244,30%,80%,0.1)');
                 $('.phoneme-item[class~="{{ target[1:] }}"]:not(.glass)').css('background', '');
                 $('.phoneme-item[class~="{{ target[1:] }}"]').css('outline', '');
-                $('.phoneme-item[class~="{{ target[1:] }}"]').css('text-shadow', '')
+                $('.phoneme-item[class~="{{ target[1:] }}"]').css('text-shadow', '');
             });
         {% endfor %}
     {% endfor %}
