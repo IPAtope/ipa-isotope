@@ -1,69 +1,67 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
-  font-family: sans-serif;
-  margin: 1%;
-  background-color: #ece6d5;
+    font-family: sans-serif;
+    margin: 1%;
+    background-color: #ece6d5;
 }
 
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #ece6d5;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ece6d5;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 /* hidden elements */
-
 .hidden {
     display: none;
 }
 
 /* ---- button ---- */
-
-.controls > .button, .button-group > .button {
-  float: left;
-  border-radius: 0;
-  margin: .5;
-  background-color: #ecdbd5;
-  border: 1px solid black;
-  color: black;
-  cursor: pointer;
+.controls>.button, .button-group>.button, .btn-group>.btn, .dropdown>.btn {
+    /* float: left; */
+    border-radius: 0;
+    margin: .5;
+    background-color: #ecdbd5;
+    border: 1px solid black;
+    color: black;
 }
 
-.button-group > .button:hover {
-  background-color: #b684c7;
+.button-group>.button:hover {
+    background-color: #b684c7;
 }
 
-.button-group > .button:active {
-  background-color: #673678;
+.button-group>.button:active {
+    background-color: #673678;
 }
 
-.button-group > .button.is-checked {
-  color: white;
-  background-color: #442450;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+.button-group>.button.is-checked {
+    color: white;
+    background-color: #442450;
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 /* ---- button-group ---- */
-
 .button-group {
-  margin-left: 5px;
-  margin-bottom: 0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
 }
 
 .button-group:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .button-group-label {
@@ -74,114 +72,190 @@ body {
     border-radius: 0.2em 0.2em 0.2em 0.2em;
 }
 
+.button-group .button:first-child {
+    border-radius: 0.5em 0 0 0.5em;
+}
 
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+.button-group .button:last-child {
+    border-radius: 0 0.5em 0.5em 0;
+}
 
 /* ---- isotope ---- */
-
 .grid {
-  /* border: 1px solid #333; */
+    /* border: 1px solid #333; */
 }
 
 /* clear fix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* ---- .phoneme-item ---- */
-
 .card {
-  /* background: #fff; */
-  border-radius: 4px;
-  /* display: inline-block;*/
-  margin: .5rem;
-  /* position: relative;*/
-  box-shadow: 0 8px 14px rgba(0,0,0,0.12), 0 7px 7px rgba(0,0,0,0.24);
-  /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    /* background: #fff; */
+    border-radius: 4px;
+    /* display: inline-block;*/
+    margin: .5rem;
+    /* position: relative;*/
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12), 0 7px 7px rgba(0, 0, 0, 0.24);
+    /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
 }
 
 .card:hover {
-  box-shadow: 0 20px 30px rgba(0,0,0,0.25), 0 13px 13px rgba(0,0,0,0.22);
-  /* background-color: #d1b2dc; */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25), 0 13px 13px rgba(0, 0, 0, 0.22);
+    /* background-color: #d1b2dc; */
 }
 
 .phoneme-item {
-  position: relative;
-  float: left;
-  width: 120px;
-  height: 120px;
-  margin: 5px;
-  padding: 10px;
-  background: #888;
-  color: #262524;
-  font-family: 'Ubuntu', sans-serif;
-}
-.phoneme-item:hover {
-  /* background-color: #d1b2dc; */
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    padding: 10px;
+    background: #888;
+    color: #262524;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.phoneme-item > * {
-  margin: 1;
-  padding: 1;
+.phoneme-item:hover {
+    /* background-color: #d1b2dc; */
+}
+
+.phoneme-item.glass {
+    background: hsla(244, 30%, 80%, 0.1);
+}
+
+.phoneme-item>* {
+    margin: 1;
+    padding: 1;
+}
+
+/* draggabilly handle */
+.phoneme-item>.handle {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 18%;
+    height: 18%;
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    background: #442450;
+    opacity: .3;
+    z-index: 200;
+}
+
+.handle:hover {
+    background: #e1dffc;
+    outline: 3px dashed #444;
 }
 
 /* highlight drag & drop */
-
 /* Draggabilly adds is-dragging */
 .phoneme-item.is-dragging,
 /* Packery adds class while transitioning to drop position */
 .phoneme-item.is-positioning-post-drag {
-  z-index: 100; /* keep dragged item on top */
-  outline: 3px dashed #444;
-  box-shadow: 0 40px 60px rgba(0,0,0,0.45), 0 20px 20px rgba(0,0,0,0.22);
-}
-.packery-drop-placeholder {
-  outline: 3px dashed #444;
-  outline-offset: -6px;
-  /* transition position changing */
-  -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+    z-index: 100;
+    /* keep dragged item on top */
+    outline: 3px dashed #444;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.45), 0 20px 20px rgba(0, 0, 0, 0.22);
 }
 
+.packery-drop-placeholder {
+    outline: 3px dashed #444;
+    outline-offset: -6px;
+    /* transition position changing */
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
 
 .phoneme-item .name {
-  position: absolute;
-
-  left: 5%;
-  top: 50%;
-  margin-right: 10px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    margin-right: 10px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .phoneme-item .symbol {
-  position: absolute;
-  left: 10%;
-  top: .1%;
-  font-size: 42px;
-  font-weight: bold;
-  font-family: sans-serif;
-
-  color: white;
+    position: absolute;
+    left: 10%;
+    top: .1%;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: #000 0px 0px .6px, #000 0px 0px .6px, #000 0px 0px .6px,
+        #000 0px 0px .6px, #000 0px 0px .6px, #000 0px 0px .6px;
+    -webkit-font-smoothing: antialiased;
+    color: white;
 }
 
 .phoneme-item .sonority {
-  position: absolute;
-  right: 8px;
-  top: 5px;
+    position: absolute;
+    right: 8px;
+    top: 5px;
 }
 
 /* coloring all at first such that unknowns get color too */
-.phoneme-item                                   { background: hsl( 324, 80%, 80%); }
-.phoneme-item.plosive,.stop                     { background: hsl(   0, 80%, 80%); }
-.phoneme-item.fricative,.affricate,.sibilant    { background: hsl(  36, 80%, 80%); }
-.phoneme-item.nasal                             { background: #C5AEB4; }
-.phoneme-item.trill                             { background: hsl( 108, 60%, 80%); }
-.phoneme-item.tap,.flap                         { background: #b3b300; }
-.phoneme-item.approximant                       { background: hsl( 290, 40%, 80%); }
-.phoneme-item.vowel                             { background: hsl( 216, 80%, 80%); }
+.phoneme-item {
+    background: hsl(324, 80%, 80%);
+}
+
+.phoneme-item.plosive, .stop {
+    background: hsl(0, 85%, 85%);
+}
+
+.phoneme-item.fricative, .affricate, .sibilant {
+    background: hsl(36, 80%, 80%);
+}
+
+.phoneme-item.nasal {
+    background: hsl(60, 96.3%, 79%);
+}
+
+.phoneme-item.trill {
+    background: hsl(124.1, 82.9%, 83.1%);
+}
+
+.phoneme-item.tap, .flap {
+    background: hsl(30.3, 96.3%, 72%);
+}
+
+.phoneme-item.approximant {
+    background: hsl(260.7, 44.5%, 73.1%);
+}
+
+.phoneme-item.vowel {
+    background: hsl(200.7, 44.5%, 73.1%);
+}
+
+
+
+/* footer */
+.footer {
+    font-size: .75em;
+    padding: 5px 30px;
+    border-top: 1px solid #ddd;
+    text-align: right
+}
+
+.footer p {
+    margin: 0 0 0 1em;
+    display: inline-block
+}
+
+.footer p:last-child {
+    margin-right: 30px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 300
+}
