@@ -108,6 +108,12 @@ $('.sorters').on('click', '.button', function() {
 {% endfor %}
 
 
+$('.play').on('click', function(e) {
+    var symb = $(this).parent('.phoneme-item').find('.symbol').text();
+	console.log('attempting to play', symb);
+    process(symb);
+})
+
 
 // packery --------------------
 
