@@ -1,0 +1,1936 @@
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+
+<head>
+    <title>
+        IPAtope
+    </title>
+
+    <!-- CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://rawcdn.githack.com/rstacruz/jquery.transit/1c978a0aaa1eac88be9f9508c4f5913b30d43a87/jquery.transit.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://rawcdn.githack.com/metafizzy/isotope-packery/0b8522ea7d10e39d084d028da8a81c6f126d6bce/packery-mode.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://rawcdn.githack.com/itinerarium/phoneme-synthesis/499583531c5013559ebb64e1e1eae928bd2f6528/mespeak.js"></script>
+
+</head>
+<link rel="icon"
+      type="image/png"
+      href="favicon.ico">
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="ui-group">
+        <h1 class="ui-group-item title">IPAtope</h1>
+    </div>
+
+    <div class="ui-group">
+        <h4 class="ui-group-item">Filter</h4>
+    </div>
+
+    <div class="filters controls">
+
+        
+        <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> voice </label></div>
+            <div class="button-group" data-filter-group="voice">
+                <button class="ui-group-item btn  button is-checked" data-filter="*">all</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".voiced,.vowel">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".voiced,.vowel" name="voiced" data-filter=".voiced,.vowel">
+    <label class="form-check-label" for=".voiced,.vowel"> -->
+    voiced
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".voiceless">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".voiceless" name="voiceless" data-filter=".voiceless">
+    <label class="form-check-label" for=".voiceless"> -->
+    voiceless
+</button>
+                
+            </div>
+        </div>
+        
+        <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> place </label></div>
+            <div class="button-group" data-filter-group="place">
+                <button class="ui-group-item btn  button is-checked" data-filter="*">all</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".glottal">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".glottal" name="glottal" data-filter=".glottal">
+    <label class="form-check-label" for=".glottal"> -->
+    glottal
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".velar">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".velar" name="velar" data-filter=".velar">
+    <label class="form-check-label" for=".velar"> -->
+    velar
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".uvular">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".uvular" name="uvular" data-filter=".uvular">
+    <label class="form-check-label" for=".uvular"> -->
+    uvular
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar" name="alveolar" data-filter=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar">
+    <label class="form-check-label" for=".alveolar,.postalveolar,.alveolo-palatal,.palato-alveolar"> -->
+    alveolar
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal" name="palatal" data-filter=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal">
+    <label class="form-check-label" for=".palatal,.palato-alveolar,.alveolo-palatar,.palatalised,.labial-palatal"> -->
+    palatal
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal" name="labial" data-filter=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal">
+    <label class="form-check-label" for=".labial,.bilabial,.labiodental,.labiovelar,.labial-palatal"> -->
+    labial
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".dental,.labiodental">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".dental,.labiodental" name="dental" data-filter=".dental,.labiodental">
+    <label class="form-check-label" for=".dental,.labiodental"> -->
+    dental
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".nasal">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".nasal" name="nasal" data-filter=".nasal">
+    <label class="form-check-label" for=".nasal"> -->
+    nasal
+</button>
+                
+            </div>
+        </div>
+        
+        <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> manner </label></div>
+            <div class="button-group" data-filter-group="manner">
+                <button class="ui-group-item btn  button is-checked" data-filter="*">all</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".stop,.plosive">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".stop,.plosive" name="stop/plosive" data-filter=".stop,.plosive">
+    <label class="form-check-label" for=".stop,.plosive"> -->
+    stop/plosive
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".trill">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".trill" name="trill" data-filter=".trill">
+    <label class="form-check-label" for=".trill"> -->
+    trill
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".tap,.flap">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".tap,.flap" name="tap or flap" data-filter=".tap,.flap">
+    <label class="form-check-label" for=".tap,.flap"> -->
+    tap or flap
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".lateral">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".lateral" name="lateral" data-filter=".lateral">
+    <label class="form-check-label" for=".lateral"> -->
+    lateral
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".fricative">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".fricative" name="fricative" data-filter=".fricative">
+    <label class="form-check-label" for=".fricative"> -->
+    fricative
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".affricate">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".affricate" name="affricate" data-filter=".affricate">
+    <label class="form-check-label" for=".affricate"> -->
+    affricate
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".sibilant">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".sibilant" name="sibilant" data-filter=".sibilant">
+    <label class="form-check-label" for=".sibilant"> -->
+    sibilant
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".approximant">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".approximant" name="approximant" data-filter=".approximant">
+    <label class="form-check-label" for=".approximant"> -->
+    approximant
+</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter=".vowel">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id=".vowel" name="vowel" data-filter=".vowel">
+    <label class="form-check-label" for=".vowel"> -->
+    vowel
+</button>
+                
+            </div>
+        </div>
+        
+        <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> properties </label></div>
+            <div class="button-group" data-filter-group="properties">
+                <button class="ui-group-item btn  button is-checked" data-filter="*">all</button>
+                
+                <button type="button" class="ui-group-item btn button" data-filter="sonGreaterThan5">
+    <!-- <input type="checkbox" class="checkbox btn btn-sm" id="sonGreaterThan5" name="sonority > 5" data-filter="sonGreaterThan5">
+    <label class="form-check-label" for="sonGreaterThan5"> -->
+    sonority > 5
+</button>
+                
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="ui-group">
+        <h4 class="ui-group-item">Sort</h4>
+    </div>
+
+    <div class="sorters controls">
+        <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> sort by </label></div>
+            <div class="button-group" data-filter-group="{{ group }}">
+                <button class="ui-group-item btn  button is-checked" data-sort-by="original-order">original</button>
+                
+                <button class="ui-group-item btn button" data-sort-by="symbol">symbol</button>
+                
+                <button class="ui-group-item btn button" data-sort-by="sonority">sonority</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-group">
+        <h4 class="ui-group-item">Controls</h4>
+    </div>
+
+    <div class="ui-group-bootstrap">
+        <!-- <div class="ui-group">
+            <div class="ui-group-item button-group-label" style="float: left;"><label style="margin-left: 10px; margin-right: 10px;"> control </label></div>
+        </div> -->
+        <div class="controls btn-toolbar" style="margin: 5px;" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="">
+                <button class="ui-group-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$grid.isotope({sortBy: 'original-order', filter: '*'});">
+                    reorder
+                </button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="">
+                <button class="ui-group-bootstrap-item btn btn-secondary btn-sm" type="button" name="button" onclick="$grid.isotope('shuffle');">
+                    shuffle
+                </button>
+                <button class="ui-group-bootstrap-item btn btn-secondary btn-sm" type="button" name="button" onclick="$( '.phoneme-item' ).each(function( index ) {
+                                $(this).transition({
+                                    top : Math.random() * (800 - $(this).height()),
+                                    left : Math.random() * ($(window).width() - $(this).width() - 100),
+                                }, 300, 'ease')
+                            });">
+                    scramble
+                </button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="">
+
+                <div class="ui-group-bootstrap-item dropdown">
+                    <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                        toggle attributes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        
+                        <button class="dropdown-item btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item>.name').toggleClass('hidden');">
+                            name
+                        </button>
+                        
+                        <button class="dropdown-item btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item>.symbol').toggleClass('hidden');">
+                            symbol
+                        </button>
+                        
+                        <button class="dropdown-item btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item>.sonority').toggleClass('hidden');">
+                            sonority
+                        </button>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="">
+                <div class="ui-group-bootstrap-item dropdown">
+                    <a class="btn btn-sm btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                        theme
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$('.glass').css('background', '');
+                                         $('.phoneme-item').removeClass('glass');">
+                            pastel
+                        </button>
+                        <button class="dropdown-item button btn btn-secondary btn-sm" type="button" name="button" onclick="$('.phoneme-item').addClass('glass');
+                                $('.glass').css('background', 'hsla(244,30%,80%,0.1)');">
+                            glass
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ui-group">
+        <h5 class="ui-group-item tip">Try dragging them around using the handle in the corner! </h5>
+    </div>
+
+    <div class="grid">
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       stop  alveolar   " name="voiceless alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">t</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant ejective       stop alveolar  voiceless  " name="ejective voiceless alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">tʼ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">ejective voiceless alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant aspirated      stop  alveolar  voiceless  " name="aspirated voiceless alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">tʰ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">aspirated voiceless alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      stop  alveolar  voiceless  " name="palatalised voiceless alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">tʲ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">palatalised voiceless alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       stop  alveolar   " name="voiced alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">d</p>
+    <p class="sonority">4.37</p>
+    <p class="name">voiced alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      stop  alveolar  voiced  " name="palatalised voiced alveolar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">dʲ</p>
+    <p class="sonority">4.37</p>
+    <p class="name">palatalised voiced alveolar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       sibilant  alveolar   " name="voiceless alveolar sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">s</p>
+    <p class="sonority">5.11</p>
+    <p class="name">voiceless alveolar sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       sibilant  alveolar   " name="voiced alveolar sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">z</p>
+    <p class="sonority">5.14</p>
+    <p class="name">voiced alveolar sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless lateral      fricative  alveolar   " name="voiceless alveolar lateral fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɬ</p>
+    <p class="sonority">6.41</p>
+    <p class="name">voiceless alveolar lateral fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced lateral      fricative  alveolar   " name="voiced alveolar lateral fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɮ</p>
+    <p class="sonority">6.43</p>
+    <p class="name">voiced alveolar lateral fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  dental   " name="voiceless dental fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">θ</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless dental fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  dental   " name="voiced dental fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ð</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced dental fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       sibilant  palato-alveolar   " name="voiceless palato-alveolar sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʃ</p>
+    <p class="sonority">5.11</p>
+    <p class="name">voiceless palato-alveolar sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       sibilant  alveolo-palatal   " name="voiceless alveolo-palatal sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɕ</p>
+    <p class="sonority">5.11</p>
+    <p class="name">voiceless alveolo-palatal sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      sibilant  palato-alveolar  voiceless  " name="palatalised voiceless palato-alveolar sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʃʲ</p>
+    <p class="sonority">5.11</p>
+    <p class="name">palatalised voiceless palato-alveolar sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       sibilant  palato-alveolar   " name="voiced palato-alveolar sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʒ</p>
+    <p class="sonority">5.14</p>
+    <p class="name">voiced palato-alveolar sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       sibilant  alveolo-palatal   " name="voiced alveolo-palatal sibilant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʑ</p>
+    <p class="sonority">5.14</p>
+    <p class="name">voiced alveolo-palatal sibilant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       stop  palatal   " name="voiceless palatal stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">c</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless palatal stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       stop  palatal   " name="voiced palatal stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɟ</p>
+    <p class="sonority">4.37</p>
+    <p class="name">voiced palatal stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  palatal   " name="voiceless palatal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ç</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless palatal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  palatal   " name="voiced palatal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʝ</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced palatal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       plosive  bilabial   " name="voiceless bilabial plosive">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">p</p>
+    <p class="sonority">4.54</p>
+    <p class="name">voiceless bilabial plosive</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       plosive  bilabial   " name="voiced bilabial plosive">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">b</p>
+    <p class="sonority">4.58</p>
+    <p class="name">voiced bilabial plosive</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant aspirated      plosive  bilabial  voiced  " name="aspirated voiced bilabial plosive">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">bʰ</p>
+    <p class="sonority">4.58</p>
+    <p class="name">aspirated voiced bilabial plosive</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  labiodental   " name="voiceless labiodental fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">f</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless labiodental fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  labiodental   " name="voiced labiodental fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">v</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced labiodental fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  bilabial   " name="voiceless bilabial fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɸ</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless bilabial fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  bilabial   " name="voiced bilabial fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">β</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced bilabial fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       stop  velar   " name="voiceless velar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">k</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless velar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless  labialised     stop  velar   " name="voiceless labialised velar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">kʷ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless labialised velar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless    aspirated   stop  velar   " name="voiceless aspirated velar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">kʰ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless aspirated velar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      stop  velar  voiceless  " name="palatalised voiceless velar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">kʲ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">palatalised voiceless velar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       stop  velar   " name="voiced velar stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">g</p>
+    <p class="sonority">4.37</p>
+    <p class="name">voiced velar stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  velar   " name="voiceless velar fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">x</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless velar fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  velar   " name="voiced velar fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɣ</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced velar fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       stop  uvular   " name="voiceless uvular stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">q</p>
+    <p class="sonority">4.33</p>
+    <p class="name">voiceless uvular stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       stop  uvular   " name="voiced uvular stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɢ</p>
+    <p class="sonority">4.37</p>
+    <p class="name">voiced uvular stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  uvular   " name="voiceless uvular fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">χ</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless uvular fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  uvular   " name="voiced uvular fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʁ</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced uvular fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  pharyngeal   " name="voiceless pharyngeal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ħ</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless pharyngeal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  pharyngeal   " name="voiced pharyngeal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʕ</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced pharyngeal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       fricative  glottal   " name="voiceless glottal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">h</p>
+    <p class="sonority">4.93</p>
+    <p class="name">voiceless glottal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       fricative  glottal   " name="voiced glottal fricative">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɦ</p>
+    <p class="sonority">4.97</p>
+    <p class="name">voiced glottal fricative</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       stop  glottal    " name="glottal stop">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʔ</p>
+    <p class="sonority">4.33</p>
+    <p class="name">glottal stop</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       affricate  palato-alveolar   " name="voiceless palato-alveolar affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">tʃ</p>
+    <p class="sonority">4.74</p>
+    <p class="name">voiceless palato-alveolar affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       affricate  palato-alveolar   " name="voiced palato-alveolar affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">dʒ</p>
+    <p class="sonority">4.78</p>
+    <p class="name">voiced palato-alveolar affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       affricate  alveolar   " name="voiceless alveolar affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ts</p>
+    <p class="sonority">4.74</p>
+    <p class="name">voiceless alveolar affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiced       affricate  alveolar   " name="voiced alveolar affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">dz</p>
+    <p class="sonority">4.78</p>
+    <p class="name">voiced alveolar affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       affricate  velar   " name="voiceless velar affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">kx</p>
+    <p class="sonority">4.74</p>
+    <p class="name">voiceless velar affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant voiceless       affricate  labiodental   " name="voiceless labiodental affricate">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">pf</p>
+    <p class="sonority">4.74</p>
+    <p class="name">voiceless labiodental affricate</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  bilabial    " name="bilabial nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">m</p>
+    <p class="sonority">5.28</p>
+    <p class="name">bilabial nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  alveolar    " name="alveolar nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">n</p>
+    <p class="sonority">5.28</p>
+    <p class="name">alveolar nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  velar    " name="velar nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ŋ</p>
+    <p class="sonority">5.28</p>
+    <p class="name">velar nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  retroflex    " name="retroflex nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɳ</p>
+    <p class="sonority">5.28</p>
+    <p class="name">retroflex nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  palatal    " name="palatal nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɲ</p>
+    <p class="sonority">5.28</p>
+    <p class="name">palatal nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       nasal  uvular    " name="uvular nasal">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɴ</p>
+    <p class="sonority">5.28</p>
+    <p class="name">uvular nasal</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant lateral      approximant  alveolar    " name="alveolar lateral approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">l</p>
+    <p class="sonority">7.2</p>
+    <p class="name">alveolar lateral approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised lateral     approximant  alveolar    " name="palatalised alveolar lateral approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">lʲ</p>
+    <p class="sonority">7.2</p>
+    <p class="name">palatalised alveolar lateral approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant lateral      approximant  palatal    " name="palatal lateral approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʎ</p>
+    <p class="sonority">7.2</p>
+    <p class="name">palatal lateral approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       trill  alveolar    " name="alveolar trill">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">r</p>
+    <p class="sonority">5.44</p>
+    <p class="name">alveolar trill</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      trill  alveolar    " name="palatalised alveolar trill">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">rʲ</p>
+    <p class="sonority">5.44</p>
+    <p class="name">palatalised alveolar trill</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       flap  alveolar    " name="alveolar flap">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɾ</p>
+    <p class="sonority">5.88</p>
+    <p class="name">alveolar flap</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      flap  alveolar    " name="palatalised alveolar flap">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɾʲ</p>
+    <p class="sonority">5.88</p>
+    <p class="name">palatalised alveolar flap</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       trill  uvular    " name="uvular trill">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʀ</p>
+    <p class="sonority">5.44</p>
+    <p class="name">uvular trill</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       approximant  palatal    " name="palatal approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">j</p>
+    <p class="sonority">6.02</p>
+    <p class="name">palatal approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       approximant  labiovelar    " name="labiovelar approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">w</p>
+    <p class="sonority">6.02</p>
+    <p class="name">labiovelar approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       approximant  labiodental    " name="labiodental approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʋ</p>
+    <p class="sonority">6.02</p>
+    <p class="name">labiodental approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant palatalised      approximant  labiodental    " name="palatalised labiodental approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʋʲ</p>
+    <p class="sonority">6.02</p>
+    <p class="name">palatalised labiodental approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       approximant  labial-palatal    " name="labial-palatal approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɥ</p>
+    <p class="sonority">6.02</p>
+    <p class="name">labial-palatal approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card consonant       approximant  velar    " name="velar approximant">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɰ</p>
+    <p class="sonority">6.02</p>
+    <p class="name">velar approximant</p>
+    
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front unrounded       high" name="high front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">i</p>
+    <p class="sonority">9.96</p>
+    <p class="name">high front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel near- near-     front unrounded      high" name="near-high near-front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɪ</p>
+    <p class="sonority">9.96</p>
+    <p class="name">near-high near-front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     central unrounded       high" name="high central unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɨ</p>
+    <p class="sonority">9.96</p>
+    <p class="name">high central unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     back rounded       high" name="high back rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">u</p>
+    <p class="sonority">9.96</p>
+    <p class="name">high back rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel near- near-     back rounded      high" name="near-high near-back rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʊ</p>
+    <p class="sonority">9.96</p>
+    <p class="name">near-high near-back rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front unrounded       high-mid" name="high-mid front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">e</p>
+    <p class="sonority">11.13</p>
+    <p class="name">high-mid front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front unrounded nasal      high-mid" name="high-mid front unrounded nasal vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ẽ</p>
+    <p class="sonority">11.55</p>
+    <p class="name">high-mid front unrounded nasal vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front unrounded       low-mid" name="low-mid front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɛ</p>
+    <p class="sonority">13.03</p>
+    <p class="name">low-mid front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     back rounded       high-mid" name="high-mid back rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">o</p>
+    <p class="sonority">11.13</p>
+    <p class="name">high-mid back rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     back rounded       low-mid" name="low-mid back rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɔ</p>
+    <p class="sonority">13.03</p>
+    <p class="name">low-mid back rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     back unrounded       low-mid" name="low-mid back unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʌ</p>
+    <p class="sonority">13.03</p>
+    <p class="name">low-mid back unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front unrounded       low" name="low front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">a</p>
+    <p class="sonority">13.84</p>
+    <p class="name">low front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel near-     front unrounded      low" name="near-low front unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">æ</p>
+    <p class="sonority">13.84</p>
+    <p class="name">near-low front unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front rounded       high" name="high front rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">y</p>
+    <p class="sonority">9.96</p>
+    <p class="name">high front rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel near- near-     front rounded      high" name="near-high near-front rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ʏ</p>
+    <p class="sonority">9.96</p>
+    <p class="name">near-high near-front rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front rounded       high-mid" name="high-mid front rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ø</p>
+    <p class="sonority">11.13</p>
+    <p class="name">high-mid front rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     front rounded       low-mid" name="low-mid front rounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">œ</p>
+    <p class="sonority">13.03</p>
+    <p class="name">low-mid front rounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     central unrounded       mid" name="mid central unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ə</p>
+    <p class="sonority">12.14</p>
+    <p class="name">mid central unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+        <!-- whatever we wish to display on the phoneme -->
+
+<div class="phoneme-item card vowel     back unrounded       high" name="high back unrounded vowel">
+    <div class="handle">
+        <div class="image">
+        </div>
+    </div>
+    <div class="btn play">
+        <div class="image">
+        </div>
+    </div>
+    <p class="symbol">ɯ</p>
+    <p class="sonority">9.96</p>
+    <p class="name">high back unrounded vowel</p>
+    
+        <!--  -->
+    
+</div>
+        
+    </div>
+
+
+</body>
+
+
+<footer class="footer">
+    <p><a href="https://github.com/ipatope/" target="_blank"> IPAtope </a></p>
+    <p>&copy; 2020
+        <cite>
+            <a href="https://github.com/aalok-sathe" target="_blank">aalok-sathe</a>
+            and
+            <a href="https://github.com/shinjinighosh" target="_blank">shinjinighosh</a>
+        </cite>
+</footer>
+
+
+<!--LOCAL-->
+<link href="ipatope.css" rel="stylesheet" type="text/css">
+<script src="ipatope.js"></script>
+<script src="particles.js"></script>
+<script src="mespeakfn.js"></script>
+
+</html>
